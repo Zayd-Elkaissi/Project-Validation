@@ -8,7 +8,3 @@
 ## Module 5 : Data persistence
 ## Module 6 : WorkManager
 
-- First item
-- Second item
-- Third item
-- Fourth item
