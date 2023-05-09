@@ -9,22 +9,22 @@ fun main (){
      val taskRepository = TaskRepository()
     // AjZouter une tâche
     val task = TaskEntry(1,"Task 1",1,System.currentTimeMillis())
-//    val task1 = TaskEntry(1,"Task 1",1,System.currentTimeMillis())
      taskRepository.save(task);
    // println(task.title)
-//    println(task == task1)
-
-    // Suprimer une tâche
-    //taskRepository.delete(4)
-
-    // Modifier une tâche
-    val updateTask = taskRepository.findById(1)
-    updateTask.title = "task 100"
 
     // Afficher les tâches
     for(item in taskRepository.getAllTasks()){
         println(item.title)
     }
+
+    // Suprimer une tâche
+    taskRepository.delete(4)
+
+    // Modifier une tâche
+    val updateTask = taskRepository.findById(2)
+    updateTask.title = "task 200"
+
+
 
 
 }
