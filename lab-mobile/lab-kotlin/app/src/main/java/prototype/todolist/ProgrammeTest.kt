@@ -12,10 +12,6 @@ fun main (){
      taskRepository.save(task);
    // println(task.title)
 
-    // Afficher les tâches
-    for(item in taskRepository.getAllTasks()){
-        println(item.title)
-    }
 
     // Suprimer une tâche
     taskRepository.delete(4)
@@ -23,6 +19,11 @@ fun main (){
     // Modifier une tâche
     val updateTask = taskRepository.findById(2)
     updateTask.title = "task 200"
+
+     // Afficher les tâches
+    for(item in taskRepository.getAllTasks()){
+        println(item.title)
+    }
 
 
 
